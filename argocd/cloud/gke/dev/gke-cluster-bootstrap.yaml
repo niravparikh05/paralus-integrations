@@ -236,8 +236,8 @@ metadata:
   labels:
     app.kubernetes.io/managed-by: paralus
 data:
-  clusterID: b9a3eeb3-3e84-4601-b7a9-6abd76d10ca9
-  relays: '[{"token":"cl0cajac6p9vlir1vc7g","addr":"console-ic-oss.dev.rafay-edge.net:443","endpoint":"*.core-connector.ic-oss.dev.rafay-edge.net:443","name":"paralus-core-relay-agent","templateToken":"ck8j3hac6p9na5dal1qg"}]'
+  clusterID: dcf4f1bb-e102-40fe-a93c-8b7751d626be
+  relays: '[{"token":"cl0ftl6g8tqs7383umq0","addr":"console.paralus.local:80","endpoint":"*.core-connector.paralus.local:443","name":"paralus-core-relay-agent","templateToken":"cl0fjl6g8tqs7383umm0"}]'
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -282,7 +282,7 @@ spec:
           privileged: true
       containers:
       - name: relay-agent
-        image: "niravparikh05/relay:latest"
+        image: "paralusio/relay:v0.1.6"
         args: ["--mode=client", "--log-level=3"]
         env:
         - name: POD_NAME
