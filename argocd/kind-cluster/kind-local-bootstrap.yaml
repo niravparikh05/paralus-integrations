@@ -236,8 +236,8 @@ metadata:
   labels:
     app.kubernetes.io/managed-by: paralus
 data:
-  clusterID: d78cfb40-1be3-48cf-a535-f8a3dce07f66
-  relays: '[{"token":"cl09l7ug8tqs738qu580","addr":"console.paralus.local:80","endpoint":"*.core-connector.paralus.local:443","name":"paralus-core-relay-agent","templateToken":"cl09gaeg8tqs738qu530"}]'
+  clusterID: 0012a524-ed4d-4fef-8bda-b5ecb39c76b2
+  relays: '[{"token":"cl0a0r6g8tqs738qu5a0","addr":"console.paralus.local:80","endpoint":"*.core-connector.paralus.local:443","name":"paralus-core-relay-agent","templateToken":"cl09gaeg8tqs738qu530"}]'
 ---
 apiVersion: apps/v1
 kind: Deployment
